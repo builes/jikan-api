@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AppRouter from "./routers/AppRouter";
+
+const breakPoints = [
+  { width: 350, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 5 },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppRouter />
+    </>
   );
 }
 
