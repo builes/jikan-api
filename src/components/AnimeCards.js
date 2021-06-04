@@ -97,15 +97,6 @@ export default function AnimeCards({ id, title, image }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-
-      <CardActions>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon color="inherit" />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon color="inherit" />
-        </IconButton>
-      </CardActions>
     </Card>
   );
 }

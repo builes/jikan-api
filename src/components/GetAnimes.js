@@ -50,8 +50,7 @@ export default function GetAnimes() {
       async function getAnimes() {
         try {
           const res = await axios.get(urlInitial);
-          setAnimes(res.data.recommendations.splice(0, 1));
-          console.log(res.data.recommendations.splice(0, 1));
+          setAnimes(res.data.recommendations.splice(0, 10));
         } catch (error) {
           console.error(error);
         }
